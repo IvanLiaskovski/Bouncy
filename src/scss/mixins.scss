@@ -1,0 +1,11 @@
+@mixin font($family, $weight, $size) {
+    @if($family == "o") { $family: 'Open Sans', sans-serif }
+    @elseif($family == "s") {$family: 'Source Sans Pro', sans-serif }
+    @elseif($family == "r") {$family: 'Roboto', sans-serif }
+    @else { $family: "" }
+    font: {
+        size: $size;
+        family: $family;
+        weight: $weight;
+    }
+}
